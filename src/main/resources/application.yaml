@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: spring-ai
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      model: deepseek-r1:latest
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    path: /v3/api-docs
+  show-actuator: false
+  packages-to-scan: com.tasoftware.spring_ai.controller
